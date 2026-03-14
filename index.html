@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1 align="center">Registration Form</h1>
+    <form action="./login.html" align="center">
+        
+        <p>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" placeholder="enter your name" name="Name" id="name" required/>
+            
+        </p>
+        <p>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" placeholder="enter your email" name="Email" id="email" required />
+        </p>
+        <p>
+            <label for="password"><b>Password:</b></label>
+            <input type="password" placeholder="enter your password" name="Password" id="password" required />
+        </p>
+        <p><label for="mobile number"><b>Mobile Number:</b></label>
+            <input type="mobile number" placeholder="enter your mobile number" name="Mobile Number" id="mobile number" placeholder="___________" />
+        </p>
+        <p>
+            <label for="address"><b>Address:</b></label>
+            <input type="textarea" name="address" id="address">
+        </p>
+        <p>
+            <label for="gender"><b>Gender:</b></label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </p>
+        <p>
+            <label for="picture"><b>Picture:</b></label>
+            <input type="file">
+        </p>
+        <p>
+            <label for="city"><b>City:</b></label>
+            <select name="city" id="city">
+                <option value="">select your city</option>
+                <option value="hyd">Hyderabad</option>
+                <option value="nzb">Nizamabad</option>
+                <option value="abd">Adilabad</option>
+            </select>
+        </p>
+        <p>
+            <label for="study"><b>Education:</b></label>
+            <input type="checkbox" value="10th">10th
+            <input type="checkbox" value="inter">inter
+            <input type="checkbox" value="diploma">diploma
+            <input type="checkbox" name="btech" id="btech"> 
+            <label for="btech">btech</label>          
+        </p>
+        <button>Register</button>
+
+    </form>
+</body>
+
+</html>
