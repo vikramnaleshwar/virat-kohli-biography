@@ -4,21 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        body{
+            background: #833ab4;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .parent{
+            background-color: rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            width: 25%;
+            margin:10% auto 5% auto;
+            border-radius: 10px;
+            padding: 20px 30px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .parent p{
+            margin: 20px 0px;
+        }
+        .form-field input{
+            background-color: inherit;
+            padding: 10px;
+            width: 60%;
+            border-radius: 10px;
+        }
+        .form-field input ::placeholder{
+            color:white;
+        }
+
+        .form-field button{
+            background-color: rgb(5, 105, 18);
+            color: white;
+            width: 80%;
+            padding: 10px;
+        }
+        .form-links a{
+            color: #1e0341;
+            text-decoration: none;
+        }
+
+    </style>
 </head>
 <body>
-    <h1 align="center">Login</h1>
-    <form action="./virat_kohli_biography.html" align="center">
-        <p>
+    
+    <form  class="parent" action="./virat_kohli_biography.html" align="center">
+        <h1 align="center">Login</h1>
+        <p class="form-field">
             <label for="email"><b>Email:</b></label>
             <input type="email" name="email" id="email" placeholder="enter your email" required>
         </p>
-        <p>
+        <p class="form-field">
             <label for="password"><b>Password:</b></label>
             <input type="password" name="password" id="password" placeholder="enter your password" required >
 
         </p>
-        <a target="_blank" href="https://www.google.com"> Forget Password ?</a>
-        <button>Login</button>
+        <p class="form-field">
+            <button>Login</button>
+        </p>
+        <p class="form-links">
+            <a target="_blank" href="https://www.google.com"> Forget Password ?</a>
+        </p>
     </form>
 </body>
 </html>

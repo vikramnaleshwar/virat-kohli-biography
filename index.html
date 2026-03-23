@@ -2,36 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+        body{
+            background: #8E0E00;  /* fallback for old browsers */
+            background-color: white;
+            background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .parent{
+            background-color: rgba(255,255,255,0.1);
+            backdrop-filter: blur(1px);
+            width: 30%;
+            margin: auto;
+            border-radius: 10px;
+            padding: 20px 30px;
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+        parent p{
+            margin: 10px 0px;
+        }
+        .form-field input{
+            background-color: inherit;
+            padding: 10px;
+            width: 60%;
+            border-radius: 10px;
+        }
+        .form-field input::placeholder{
+            color: white;
+        }
+        .form-field button{
+            background-color: rgb(4, 71, 55);
+            color: white;
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 align="center">Registration Form</h1>
-    <form action="./login.html" align="center">
+    
+    <form  class="parent" action="./login.html" align="center">
+        <h1 align="center">Registration Form</h1>
         
-        <p>
+        <p class="form-field">
             <label for="name"><b>Name:</b></label>
             <input type="text" placeholder="enter your name" name="Name" id="name" required/>
-            
-        </p>
-        <p>
+         </p>   
+        
+        <p class="form-field">
             <label for="email"><b>Email:</b></label>
             <input type="email" placeholder="enter your email" name="Email" id="email" required />
         </p>
-        <p>
+        <p class="form-field">
             <label for="password"><b>Password:</b></label>
             <input type="password" placeholder="enter your password" name="Password" id="password" required />
         </p>
-        <p><label for="mobile number"><b>Mobile Number:</b></label>
+        <p class="form-field">
+            <label for="mobile number"><b>Mobile Number:</b></label>
             <input type="mobile number" placeholder="enter your mobile number" name="Mobile Number" id="mobile number" placeholder="___________" />
         </p>
-        <p>
+        <p class="form-field">
             <label for="address"><b>Address:</b></label>
-            <input type="textarea" name="address" id="address">
+            <input type="textarea" placeholder="enter your address"  name="address" id="address">
         </p>
-        <p>
+        <p class="form-radio">
             <label for="gender"><b>Gender:</b></label>
             <input type="radio" name="gender" id="male" value="male">
             <label for="male">Male</label>
@@ -39,11 +80,11 @@
             <input type="radio" name="gender" id="female" value="female">
             <label for="female">Female</label>
         </p>
-        <p>
+        <p class="form-field">
             <label for="picture"><b>Picture:</b></label>
             <input type="file">
         </p>
-        <p>
+        <p class="form-field">
             <label for="city"><b>City:</b></label>
             <select name="city" id="city">
                 <option value="">select your city</option>
@@ -52,7 +93,7 @@
                 <option value="abd">Adilabad</option>
             </select>
         </p>
-        <p>
+        <p class="form-checkbox">
             <label for="study"><b>Education:</b></label>
             <input type="checkbox" value="10th">10th
             <input type="checkbox" value="inter">inter
@@ -60,8 +101,9 @@
             <input type="checkbox" name="btech" id="btech"> 
             <label for="btech">btech</label>          
         </p>
-        <button>Register</button>
-
+        <p class="form-field">
+            <button>Register</button>
+        </p>
     </form>
 </body>
 
